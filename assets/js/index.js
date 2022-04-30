@@ -51,7 +51,7 @@ function getUserInfo() {
 // 获取头像的封装函数
 function getAvatar(user) {
     // 获取用户姓名填充到头像处
-    let name = user.username || nickname
+    let name = user.nickname || user.username
     $('#welcome').html('欢迎&nbsp;&nbsp' + name)
         // 如果图片不为空 就一图片显示
     if (user.user_pic !== null) {
