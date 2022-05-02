@@ -4,7 +4,7 @@
 $.ajaxPrefilter(function(option) {
     // 每次会自动把获取的url地址拼接上根路径
     option.url = 'http://www.liulongbin.top:3007' + option.url
-    console.log(option.url);
+        // console.log(option.url);
 
     // 因为baseAPI文件被引入了 所以每次ajax请求的内容都会被option拿到
     // 所以可以在这里进行一个判断 路径内是否含有 有权限的访问路径
